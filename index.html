@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Footballers</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/master.css">
+  <script type="js/app.js"></script>
+</head>
+<body>
+  <form id="new-item-form">
+    <div id="form-wrapper">
+      <div class="form-item">
+        <label for="name" class="primary">Name</label>
+        <input type="text" id="name" required/>
+      </div>
+
+      <div class="form-item">
+        <label for="club" class="primary">Club</label>
+        <input type="text" id="club" required/>
+      </div>
+
+      <div class="form-item">
+        <label for="nationality" class="primary">Nationality</label>
+        <input type="text" id="nationality">
+      </div>
+
+      <div class="form-item">
+                <label for="position" class="primary">Position</label>
+                <select id="position">
+                  <option value="" disabled selected></option>
+                  <option value="Goalkeeper">Goalkeeper</option>
+                  <option value="Defender">Defender</option>
+                  <option value="Midfielder">Midfielder</option>
+                  <option value="Forward">Forward</option>
+                </select>
+
+      <fieldset>
+
+        <legend>Left or Right footed</legend>
+
+        <div class="form-item">
+          <input type="radio" id="left" name="foot">
+          <label for="left">Left</label>
+        </div>
+
+        <div class="form-item">
+          <input type="radio" id="right" name="foot">
+          <label for="right">Right</label>
+        </div>
+
+        <div class="form-item">
+          <input type="radio" id="both" name="foot">
+          <label for="both">Both</label>
+        </div>
+      </fieldset>
+    </div>
+<input type="submit" value="save">
+  </form>
+<h1>List of Players</h1>
+<div id="player-list">
+
+</div>
+</body>
+</html>
