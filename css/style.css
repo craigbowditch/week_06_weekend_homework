@@ -16,3 +16,15 @@ body {
   border: 1px solid darkslategray;
   text-align: center;
 }
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+.radio-buttons {
+  width: 100px;
+}
