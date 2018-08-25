@@ -27,40 +27,45 @@
       </div>
 
       <div class="form-item">
-                <label for="position" class="primary">Position</label>
-                <select id="position">
-                  <option value="" disabled selected></option>
-                  <option value="Goalkeeper">Goalkeeper</option>
-                  <option value="Defender">Defender</option>
-                  <option value="Midfielder">Midfielder</option>
-                  <option value="Forward">Forward</option>
-                </select>
+        <label for="position" class="primary">Position</label>
+        <select id="position">
+          <option value="" disabled selected></option>
+          <option value="Goalkeeper">Goalkeeper</option>
+          <option value="Defender">Defender</option>
+          <option value="Midfielder">Midfielder</option>
+          <option value="Forward">Forward</option>
+        </select>
 
-      <fieldset>
+        <fieldset>
 
-        <legend>Left or Right footed</legend>
+          <legend>Left or Right footed</legend>
 
-        <div class="form-item">
-          <input type="radio" id="left" name="foot" value="Left Footed">
-          <label for="left">Left</label>
+          <div class="form-item">
+            <input type="radio" id="left" name="foot" value="Left Footed">
+            <label for="left">Left</label>
+          </div>
+
+          <div class="form-item">
+            <input type="radio" id="right" name="foot" value="Right Footed">
+            <label for="right">Right</label>
+          </div>
+
+          <div class="form-item">
+            <input type="radio" id="both" name="foot" value = "Both Footed">
+            <label for="both">Both</label>
+          </div>
+        </fieldset>
+      </div>
+      <input type="submit" value="save">
+    </form>
+
+    <h1>List of Players</h1>
+    <div class="grid">
+      <div class="grid-row">
+        <div class="cell" id="player-list">
+
         </div>
-
-        <div class="form-item">
-          <input type="radio" id="right" name="foot" value="Right Footed">
-          <label for="right">Right</label>
-        </div>
-
-        <div class="form-item">
-          <input type="radio" id="both" name="foot" value = "Both Footed">
-          <label for="both">Both</label>
-        </div>
-      </fieldset>
+      </div>
     </div>
-<input type="submit" value="save">
-  </form>
-<h1>List of Players</h1>
-<div id="player-list">
-
-</div>
-</body>
-</html>
+  </body>
+  </html>
