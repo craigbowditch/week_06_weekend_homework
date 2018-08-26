@@ -42,14 +42,15 @@ const handleFormSubmit = function(event){
 const buildList = function(player){
   const playerUl = document.createElement('ul');
   const nameLi = document.createElement('li');
-  nameLi.textContent = `Name: ${player.name}`;
   const clubLi = document.createElement('li');
-  clubLi.textContent = `Club: ${player.club}`;
   const nationalityLi = document.createElement('li');
-  nationalityLi.textContent = `Nationality: ${player.nationality}`;
   const positionLi = document.createElement('li');
-  positionLi.textContent = `Position: ${player.position}`;
   const footLi = document.createElement('li');
+
+  nameLi.textContent = `Name: ${player.name}`;
+  clubLi.textContent = `Club: ${player.club}`;
+  nationalityLi.textContent = `Nationality: ${player.nationality}`;
+  positionLi.textContent = `Position: ${player.position}`;
   footLi.textContent = `${player.foot}`
 
   playerUl.appendChild(nameLi);
@@ -62,8 +63,8 @@ const buildList = function(player){
 }
 
 const renderList = function(){
-    const playerDiv = document.querySelector('#player-list');
-    playerDiv.innerHTML = "";
+  const playerDiv = document.querySelector('#player-list');
+  playerDiv.innerHTML = "";
   const playerList = getList();
   playerList.forEach((player) => {
     playerUl = buildList(player);
