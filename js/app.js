@@ -19,6 +19,8 @@ const getList = function(){
 const handleDeleteAll = function() {
   const deleteList = document.querySelector('#player-list');
   deleteList.textContent = "";
+
+  localStorage.clear();
 };
 
 const handleFormSubmit = function(event){
