@@ -4,19 +4,22 @@ body {
   margin: 0;
 }
 
-.grid {
+.wrapper {
+  display: flex;
+}
 
+.player-list {
+  flex: 1;
+  
+}
+
+.form {
+  flex: 0 0 25%;
 }
 
 .grid-row {
   display: flex;
-}
-
-
-.cell {
-  flex: 1;
-  padding: 10px 30%;
-  text-align: center;
+  justify-content: center;
 }
 
 ul {
@@ -24,13 +27,14 @@ ul {
   padding: 0;
   border-bottom: 1px solid gray;
 
-  text-align: center;
+
 }
 
 li {
   padding-bottom: 5px;
   font-size: 20px;
   text-align: center;
+  list-style: none;
 }
 
 h1 {
@@ -40,7 +44,7 @@ h1 {
 }
 
 .radio-buttons {
-  width: 18%;
+  width: 30%;
   border-color: gray;
   margin-bottom: 20px;
 
@@ -51,8 +55,8 @@ h1 {
 }
 
 input[type=text], select {
-    width: 20%;
-    padding: 8px 10px;
+    width: 75%;
+    padding: 6px 10px;
     margin: 8px 0;
     display: block;
     border: 1px solid gray;
@@ -104,4 +108,8 @@ select {
 
 option {
   background-color: gray;
+}
+
+footer {
+  padding-bottom: 50px;
 }
