@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
   form.addEventListener('submit', handleFormSubmit);
 
   renderList();
+
+  const deleteAll = document.querySelector('#delete-all');
+  deleteAll.addEventListener('click', handleDeleteAll);
 });
 
 const getList = function(){
@@ -11,6 +14,11 @@ const getList = function(){
   } else {
     return [];
   }
+};
+
+const handleDeleteAll = function() {
+  const deleteList = document.querySelector('#player-list');
+  deleteList.textContent = "";
 };
 
 const handleFormSubmit = function(event){
